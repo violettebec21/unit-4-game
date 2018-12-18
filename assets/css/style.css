@@ -1,0 +1,31 @@
+/* General Elements*/
+body{
+	background-image: url("../images/skyscraper.png")
+}
+
+jumbotron{
+  background-color: white; 
+}
+
+div{
+	background-color: white;
+	margin: 10px;
+	width: 25%
+}
+div{
+	border: solid 2px antiquewhite;
+	padding: 10px;
+}
+h1, h3, span{
+	font-weight: bold;
+	text-align: center;
+}
+
+.gems{
+	clear: both;
+}
+.gemImage{
+	height: 60px;
+	margin: 10px;
+}
+

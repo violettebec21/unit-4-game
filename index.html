@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Crystals Collector Game</title>
+
+    <!-- Added link to our local stylesheet -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+    <!-- Added link to the jQuery Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Added a link to Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+    <!--Add link to Google Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="header">
+        <h1>Crystal Collector</h1>
+    </div>
+
+    <container>
+        <div class="jumbotron">
+
+            <p id="directions">You will be given a random number at the start of the game.
+                <br><br>There are four crystals below. By clicking on a crystal you will add a specific amount of
+                points to
+                your total score.
+                <br><br>You win the game by matching your total score to the random number, you lose the game if your
+                total
+                score goes above the random number.
+                <br><br>The value of each crystal will be hidden until you click on it.
+                <br><br>Each time when the game starts, the game will change the value of each crystal.
+
+            </p>
+            <p id="randomNumber"></p>
+
+            <p>Wins:<span id="wins-text"></span></p>
+            <p>Losses:<span id="losses-text"></span></p>
+
+            <div class="gems">
+                
+            </div>
+
+        </div>
+
+    </container>
+
+    <script src="assets/javascript/game.js"></script>
+
+</body>
+
+</html>

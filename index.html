@@ -8,6 +8,9 @@
     <!-- Added link to our local stylesheet -->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
+    <!-- Added link to our RESET CSS -->
+    <link href="assets/css/reset.css" rel="stylesheet">
+
     <!-- Added link to the jQuery Library -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
@@ -20,18 +23,24 @@
 </head>
 
 <body>
-    <div class="header">
-        <h1>Crystal Collector</h1>
-    </div>
+    <div class="container">
+        <div class="section">
+            <div class="row">
+                <span class="header">
+                    <h1>Crystal Collector!</h1>
+                </span>
+            </div>
+        </div>
 
-    <container>
-        <div class="jumbotron">
+
+        <div class="jumbotron jumbotron-directions">
 
             <p id="directions">You will be given a random number at the start of the game.
                 <br><br>There are four crystals below. By clicking on a crystal you will add a specific amount of
                 points to
                 your total score.
-                <br><br>You win the game by matching your total score to the random number, you lose the game if your
+                <br><br>You win the game by matching your total score to the random number, you lose the game if
+                your
                 total
                 score goes above the random number.
                 <br><br>The value of each crystal will be hidden until you click on it.
@@ -39,19 +48,19 @@
 
             </p>
             <p id="randomNumber"></p>
-
+            <p>Your total score is: <span id="userScore"></span></p>
+            <p id="result"></p>
             <p>Wins:<span id="wins-text"></span></p>
             <p>Losses:<span id="losses-text"></span></p>
 
             <div class="gems">
-                
+
             </div>
 
         </div>
+        </div>  
 
-    </container>
-
-    <script src="assets/javascript/game.js"></script>
+        <script src="assets/javascript/game.js"></script>
 
 </body>
 

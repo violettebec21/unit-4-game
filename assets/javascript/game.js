@@ -16,7 +16,7 @@ $(document).ready(function () {
   //define variables for wins & losses & points 
   var wins = 0;
   var losses = 0;
-  var points = 0; 
+  var points = 0;
 
   //call from html
   $('#numberWins').text(wins);
@@ -55,27 +55,37 @@ $(document).ready(function () {
   //need to display user total score for the value that the crystal button is worth + display in html
   var userScore = 0;
 
-  //need to connect gem button press values to userScore variable, append each number guess to score 
-
-  //need to define reset function
-
-
-
   //write IF statement to determine wins & losses
   if (userScore === randomNumber) {
     wins++;
+    $("#wins").html(wins);
     $("#result").html("Winner!");
+    reset();
   }
 
   else if (userScore > randomNumber) {
     losses++;
+    $('#losses').html(losses);
     $("#result").html("Sorry, you lose!");
+    reset();
   }
+
 
 })
 
-//this is where we call our function to reset game when completed
+//create and call a function to reset game variables when completed
 
-};
+function reset() {
+  var gemBtn;
+  var wins;
+  var losses;
+  var userScore;
+  points = 0;
+}
+
+reset();
+
+
+
 
 
